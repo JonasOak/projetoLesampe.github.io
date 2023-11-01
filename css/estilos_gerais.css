@@ -1,0 +1,76 @@
+/* Css para o slider */
+
+.img-slider {
+    max-width: 100%;
+    height: 500px;
+}
+
+@media (max-width: 800px) {
+    .img-slider {
+      height: 30%;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      display: none;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      display: none;
+    }
+    .carousel-indicators {
+      display: none;
+    }
+}
+
+/* Formatação para o parallax da home */
+
+.parallax-home1 {
+    background-image: url(../arquivos/imagens/slides/torreEiffelParallax1.png);
+    height: 30vh;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 80% 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.parallax-home2 {
+    background-image: url(../arquivos/imagens/slides/torreEiffelParallax2.png);
+    height: 30vh;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 80% 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 500px) {
+  .parallax-home1, .parallax-home2 {
+    height: 40vh;
+    background-size: cover;
+  }
+}
+
+/* Formatação usada no slider */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 30px;
+  height: 30px;
+  margin-top: 12%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 30px;
+  height: 30px;
+  margin-top: 12%;
+}
+
+/* Formatação usada nos serviços da home */
+.icones-servicos {
+  width: 50px;
+  cursor: pointer;
+}
