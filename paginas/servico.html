@@ -54,6 +54,7 @@
     <main>
       <div class="container-fluid px-4 py-3 mt-1">
         <div class="row justify-content-center">
+    
           <div class="card col-6 mb-4" onclick="toggleCard(1)">
             <img src="../arquivos/imagens/servicos/cabelo_resized.jpg" alt="Cabelo bonito">
             <div class="card-content">
@@ -61,6 +62,7 @@
               <p>Os cortes de cabelo refletem estilo e personalidade. <span>Do clássico ao ousado, a escolha do corte pode transformar o visual, realçando traços e destacando a individualidade. Valor do serviço, depende do corte.</span></p>
             </div>
           </div>
+    
           <div class="card col-6 mb-4" onclick="toggleCard(2)">
             <img src="../arquivos/imagens/servicos/Pé.jpg" alt="Tratamento de Pé">
             <div class="card-content">
@@ -68,6 +70,7 @@
               <p>A podologia trata da saúde e estética dos pés, prevenindo e <span>tratando diversas condições. Essa prática promove o bem-estar e a mobilidade dos pacientes.</span></p>
             </div>
           </div>
+    
           <div class="card col-6 mb-4" onclick="toggleCard(3)">
             <img src="../arquivos/imagens/servicos/rosto.jpg" alt="Tratamento de Pele">
             <div class="card-content">
@@ -75,6 +78,7 @@
               <p>A estética busca realçar a beleza e promover bem-estar. <span>Profissionais oferecem tratamentos para pele, cabelo e corpo, elevando a autoestima. Através de procedimentos como limpezas de pele e massagens, contribui para o equilíbrio emocional e físico.</span></p>
             </div>
           </div>
+    
           <div class="card col-6 mb-4" onclick="toggleCard(4)">
             <img src="../arquivos/imagens/servicos/piercing2.jpg" alt="Orelha com Piercing">
             <div class="card-content">
@@ -82,9 +86,10 @@
               <p>Piercing é uma forma de expressão pessoal através da inserção de <span>joias no corpo. Popular em áreas como orelhas, nariz e lábios, requer cuidados e higiene rigorosos. É uma maneira única de expressar estilo e individualidade.</span></p>
             </div>
           </div>
+    
         </div>
       </div>
-    </main>
+    </main>    
 
     <!-- Rodapé -->
     <footer>
@@ -115,7 +120,7 @@
                       <a href="https://www.instagram.com/lesampe/" target="_blank" class="bi bi-instagram icones-footer"></a>
                   </div>
                   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 col-xl-2 mt-2">
-                      <a href="https://encurtador.com.br/dhjo8" target="_blank" class="bi bi-whatsapp icones-footer" style="width: 23px;"></a>
+                      <a href="https://api.whatsapp.com/send?phone=5571987167113" target="_blank" class="bi bi-whatsapp icones-footer" style="width: 23px;"></a>
                   </div>
               </div>
           </div>
@@ -123,12 +128,7 @@
     </footer>
     
     <!-- Scripts -->
-    <script>
-      function toggleCard(cardNumber) {
-        var card = document.querySelector('.card:nth-child(' + cardNumber + ')');
-        card.classList.toggle('active');
-      }
-    </script>
+    <script src="../js/efeitos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>

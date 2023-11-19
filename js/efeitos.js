@@ -38,9 +38,33 @@ function initMap() {
     initMap();
   });  
   
+/* Abrir e fechar ícones serviços home */
+var coll = document.getElementsByClassName('icones-servicos');
+
+for (var i = 0; i < coll.length; i++) {
+  coll[i].addEventListener('click', function() {
+    
+    var target = this.getAttribute('data-bs-target');
+    var currentCollapses = document.querySelectorAll('.collapse.show');
+    currentCollapses.forEach(function(collapse) {
+
+      if (collapse.id !== target) {
+        var bsCollapse = new bootstrap.Collapse(collapse);
+        bsCollapse.hide();
+      }
+    });
+  });
+}
+
 
 /* Efeito cards aba serviços */
 function toggleCard(cardNumber) {
-  var card = document.querySelector('.card:nth-child(' + cardNumber + ')');
-  card.classList.toggle('active');
-}  
+  var cards = document.querySelectorAll('.card');
+  cards.forEach(function(card, index) {
+    if (index + 1 === cardNumber) {
+      card.classList.toggle('active');
+    } else {
+      card.classList.remove('active');
+    }
+  });
+}
