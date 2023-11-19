@@ -174,6 +174,24 @@
   max-width: 50%;
 }
 
+.texto-salao {
+  text-align: justify;
+  text-indent: 5%;
+  margin-top: 5%;
+}
+
+@media (max-width: 300px) {
+  .texto-salao {
+    text-align: unset
+  }
+}
+
+.card-historia {
+  max-width: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 /* Marcação */
 .horarios {
   background-color: rgb(173, 178, 182);
@@ -184,15 +202,25 @@
   overflow: hidden;
 }
 
-@media (max-width: 600px) {
-  .horarios {
-    max-width: 100%;
-  }
+.aba-select {
+  overflow: hidden;
 }
 
 @media (max-width: 900px) {
   .horarios {
     max-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .horarios {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 350px) {
+  .horarios {
+    max-width: 100%;
   }
 }
 
@@ -203,4 +231,23 @@
 
 form {
   overflow: hidden;
+}
+
+.sumir {
+    color: black;
+}
+
+@media (max-width: 240px) {
+  .sumir {
+    display: none;
+  }
+  ul {
+    padding: 0;
+  }
+}
+
+@media (max-width: 465px) {
+  form {
+    max-width: 90%;
+  }
 }

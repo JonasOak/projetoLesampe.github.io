@@ -44,44 +44,43 @@
         <h2 class="text-center mt-5">Horários de funcionamento</h2>
         <div class="horarios d-flex justify-content-center align-items-center">
             <ul>
-                <li>Domingo - 09:00 a 12:00</li>
-                <li>Segunda-feira - Fechado</li>
-                <li>Terça-feira - 14:00 a 18:00</li>
-                <li>Quarta-feira - 09:00 a 18:00</li>
-                <li>Quinta-feira - 09:00 a 18:00</li>
-                <li>Sexta-feira - 09:00 a 19:00</li>
-                <li>Sábado - 09:00 a 19:00</li>
+                <li>Domingo<span class="sumir"> - <strong>09:00 a 12:00</strong></span></li>
+                <li>Segunda-feira<span class="sumir"> - <strong>Fechado</strong></span></li>
+                <li>Terça-feira<span class="sumir"> - <strong>14:00 a 18:00</strong></span></li>
+                <li>Quarta-feira<span class="sumir"> - <strong>09:00 a 18:00</strong></span></li>
+                <li>Quinta-feira<span class="sumir"> - <strong>09:00 a 18:00</strong></span></li>
+                <li>Sexta-feira<span class="sumir"> - <strong>09:00 a 19:00</strong></span></li>
+                <li>Sábado<span class="sumir"> - <strong>09:00 a 19:00</strong></span></li>
             </ul>
         </div>
     </main>
 
     <!-- Conteúdo -->
     <section id="formulario" class="d-flex justify-content-center mt-5">
-        <form action="#">
+        <form action="#" class="marcacao">
+            <div class="input-group">
+                <input  name="nome" type="text" class="form-control p-3" placeholder="Seu nome">
+            </div>
+            <div class="input-group">
+                <input name="email" type="email" class="form-control p-3" id="floatingEmail" placeholder="Email">
+            </div>
+            <div class="input-group mb-3">
+                <input name="horario" type="time" class="form-control p-3" id="floatingInput">
+            </div>
             <div class="form-floating mb-3">
-                <input  name="nome" type="text" class="form-control" id="floatingInput" placeholder="Seu nome">
-                <label for="floatingInput">Nome</label>
-                <div class="form-floating">
-                    <input name="email" type="email" class="form-control" id="floatingEmail" placeholder="Email">
-                    <label for="floatingNumber">Email</label>
-                    <div class="form-floating mb-3">
-                        <input name="horario" type="time" class="form-control" id="floatingInput">
-                        <label for="floatingInput">Horário para atendimento</label>
-                    </div>
-                    <select name="servico" class="form-select mb-3">
-                        <option selected>Selecione o serviço</option>
-                        <option value="1">Manicure</option>
-                        <option value="2">Podologia</option>
-                        <option value="3">Cabelo</option>
-                        <option value="3">Piercing</option>
-                        <option value="3">Sobrancelhas</option>
-                        <option value="3">Massagem</option>
-                    </select>
-                    <textarea name="mensagem" id="area-mensagem" cols="50" rows="10"></textarea>
-                </div>
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Confirmar</button>
-                </div>
+                <select name="servico" class="form-select mb-3 aba-select">
+                    <option selected>Selecione o serviço</option>
+                    <option value="1">Manicure</option>
+                    <option value="2">Podologia</option>
+                    <option value="3">Cabelo</option>
+                    <option value="3">Piercing</option>
+                    <option value="3">Sobrancelhas</option>
+                    <option value="3">Massagem</option>
+                </select>
+                <textarea name="mensagem" id="area-mensagem" cols="50" rows="10"></textarea>
+            </div>
+            <div class="col-12 mb-5">
+                <button type="submit" class="btn btn-primary">Confirmar</button>
             </div>
         </form>
     </section>
