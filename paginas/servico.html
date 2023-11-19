@@ -8,119 +8,84 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/estilos_gerais.css">
     <link rel="stylesheet" href="../css/formatacao_site.css">
+    <link rel="stylesheet" href="../css/cards_servicos.css">
     <title>Serviços</title>
-    <style>
-      .card-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-      }
-      .card {
-        flex: 1;
-        max-width: 300px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        margin: 10px;
-        cursor: pointer;
-        transition: transform 0.2s;
-      }
-      .card:hover {
-        transform: scale(1.05);
-      }
-      .card img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 4px;
-      }
-      .card-content {
-        display: none;
-        margin-top: 10px;
-      }
-      .card.active .card-content {
-        display: block;
-      }
-    </style>
+</head>
 <body>
-
+  
     <!-- Header -->
-    <div class="container-fluid d-flex m-autos p-0 mt-3 justify-content-center">
-      <header class="row col-md-9 col-xl-10 col-xxl-10 flex-wrap justify-content-center" id="header" style="max-width: 100%;">
-        <p class="col-8 col-sm-9 col-md-9 fa-4x col-xl-9 col-xxl-9 m-auto text-black d-flex align-items-center justify-content-center text-center mb-3 ml-4 mb-md-0 me-md-auto text-dark text-decoration-none">
+    <header class="container-fluid d-flex m-autos p-0 mt-3 justify-content-center" id="header">
+      <div class="row col-md-9 col-xl-10 col-xxl-10 flex-wrap justify-content-center"
+        style="max-width: 100%;">
+        <p
+          class="col-8 col-sm-9 col-md-9 fa-4x col-xl-9 col-xxl-9 m-auto text-black d-flex align-items-center justify-content-center text-center mb-3 ml-4 mb-md-0 me-md-auto text-dark text-decoration-none">
           <img class="logo-home" src="../arquivos/icones/logoSalao.png" alt="">
         </p>
         <b>
           <ul class="d-flex nav col-12 mb-2 align-items-center justify-content-end mb-md-0 p-0">
             <div class="col-xs-6 col-sm-3 col-6 col-md-3 col-xxl-3 d-flex justify-content-center">
-                <li><a href="home.html" class="nav-link nav-header-home px-1 link-dark">Home</a></li>
+              <li><a href="home.html" class="nav-link nav-header-home px-1 link-dark">Home</a></li>
             </div>
             <div class="col-xs-6 col-sm-3 col-6 col-md-3 col-xxl-3 d-flex justify-content-center">
-                <li><a href="servico.html" class="nav-link nav-header px-1 link-dark">Serviços</a></li>
+              <li><a href="servico.html" class="nav-link nav-header px-1 link-dark">Serviços</a></li>
             </div>
             <div class="col-xs-6 col-sm-3 col-6 col-md-3 col-xxl-3 d-flex justify-content-center">
-                <li><a href="marcacao.html" class="nav-link nav-header px-1 link-dark">Marcação</a></li>
+              <li><a href="marcacao.html" class="nav-link nav-header px-1 link-dark">Marcação</a></li>
             </div>
             <div class="col-xs-6 col-sm-3 col-6 col-md-3 col-xxl-3 d-flex justify-content-center text-center">
-                <li><a href="historia.html" class="nav-link nav-header px-1 link-dark">Sobre nós</a></li>
+              <li><a href="historia.html" class="nav-link nav-header px-1 link-dark">Sobre nós</a></li>
             </div>
           </ul>
         </b>
-      </header>
-    </div>
+      </div>
+    </header>
 
     <!-- conteúdo -->
-    <div class="card-container">
-      <div class="card" onclick="toggleCard(1)">
-        <img src="../arquivos/imagens/servicos/cabelo_resized.jpg" alt =" Cabelo bonito">
-        <div class="card-content">
-          <h3>Corte de Cabelo</h3>
-          <p>Os cortes de cabelo refletem estilo e personalidade. Do clássico ao ousado, a escolha do corte pode transformar o visual, realçando traços e destacando a individualidade. Valor do serviso, depende do corte.</p>
+    <section id="nossos-servicos">
+      <h2 id="servicos" class="text-center fw-bold pt-5 mt-5 pb-5">Conheça nossos serviços!</h2>
+      <div class="px-4 pt-1 text-center border-bottom" id="sobreNos">
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4 texto-justificado">Descubra sua melhor pele no Salão Lesampe! Tratamentos personalizados e técnicas modernas para uma experiência de bem-estar completa. Agende sua consulta hoje e ilumine sua beleza.</p>
         </div>
       </div>
-      <div class="card" onclick="toggleCard(2)">
-        <img src="../arquivos/imagens/servicos/Pé.jpg" alt="Tratamento de Pé">
-        <div class="card-content">
-          <h3>Podologia</h3>
-          <p>A podologia trata da saúde e estética dos pés, prevenindo e tratando diversas condições. Essa prática promove o bem-estar e a mobilidade dos pacientes.</p>
-        </div>
-      </div>
-      <div class="card" onclick="toggleCard(3)">
-        <img src="../arquivos/imagens/servicos/rosto.jpg" alt="Tratamento de Pele">
-        <div class="card-content">
-          <h3>Estetica</h3>
-          <p>A estética busca realçar a beleza e promover bem-estar. Profissionais oferecem tratamentos para pele, cabelo e corpo, elevando a autoestima. Através de procedimentos como limpezas de pele e massagens, contribui para o equilíbrio emocional e físico.</p>
-        </div>
-      </div>
-      <div class="card" onclick="toggleCard(4)">
-        <img src="../arquivos/imagens/servicos/piercing2.jpg" alt="Orelha com Piercing">
-        <div class="card-content">
-          <h3>Piercing</h3>
-          <p>I"Piercing é uma forma de expressão pessoal através da inserção de joias no corpo. Popular em áreas como orelhas, nariz e lábios, requer cuidados e higiene rigorosos. É uma maneira única de expressar estilo e individualidade."</p>
-        </div>
-      </div>
-    </div>
-    <style>
-      #espaco-para-texto {
-          width: 500px;
-          height: 300px;
-          border: 1px solid #ccc;
-          padding: 20px;
-          background-color: #fdd;
-          margin: auto; /* Isso centraliza a div */
-      }
+    </section>
 
-      #espaco-para-texto h2 {
-          color: black;
-      }
+    <!-- Cards -->
+    <main>
+      <div class="container-fluid px-4 py-3 mt-1">
+        <div class="row justify-content-center">
+          <div class="card col-6 mb-4" onclick="toggleCard(1)">
+            <img src="../arquivos/imagens/servicos/cabelo_resized.jpg" alt="Cabelo bonito">
+            <div class="card-content">
+              <h3>Corte de Cabelo</h3>
+              <p>Os cortes de cabelo refletem estilo e personalidade. <span>Do clássico ao ousado, a escolha do corte pode transformar o visual, realçando traços e destacando a individualidade. Valor do serviço, depende do corte.</span></p>
+            </div>
+          </div>
+          <div class="card col-6 mb-4" onclick="toggleCard(2)">
+            <img src="../arquivos/imagens/servicos/Pé.jpg" alt="Tratamento de Pé">
+            <div class="card-content">
+              <h3>Podologia</h3>
+              <p>A podologia trata da saúde e estética dos pés, prevenindo e <span>tratando diversas condições. Essa prática promove o bem-estar e a mobilidade dos pacientes.</span></p>
+            </div>
+          </div>
+          <div class="card col-6 mb-4" onclick="toggleCard(3)">
+            <img src="../arquivos/imagens/servicos/rosto.jpg" alt="Tratamento de Pele">
+            <div class="card-content">
+              <h3>Estética</h3>
+              <p>A estética busca realçar a beleza e promover bem-estar. <span>Profissionais oferecem tratamentos para pele, cabelo e corpo, elevando a autoestima. Através de procedimentos como limpezas de pele e massagens, contribui para o equilíbrio emocional e físico.</span></p>
+            </div>
+          </div>
+          <div class="card col-6 mb-4" onclick="toggleCard(4)">
+            <img src="../arquivos/imagens/servicos/piercing2.jpg" alt="Orelha com Piercing">
+            <div class="card-content">
+              <h3>Piercing</h3>
+              <p>Piercing é uma forma de expressão pessoal através da inserção de <span>joias no corpo. Popular em áreas como orelhas, nariz e lábios, requer cuidados e higiene rigorosos. É uma maneira única de expressar estilo e individualidade.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-      #espaco-para-texto p {
-          color: black;
-      }
-  </style>
-    <div id="espaco-para-texto">
-      <h2>✨ Desperte a Beleza que Existe em Você no Salão Lesampe! ✨</h2>
-      <p>"Descubra sua melhor pele no Salão Lesampe! Tratamentos personalizados e técnicas modernas para uma experiência de bem-estar completa. Agende sua consulta hoje e ilumine sua beleza. #CuideDeSuaPele #LesampeSalão"</p>
-  </div>
-    
     <!-- Rodapé -->
     <footer>
       <div class="row col-12 mt-1 p-1 text-dark m-auto text-center" style="background-color: #c28a8b;">

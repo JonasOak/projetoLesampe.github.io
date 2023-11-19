@@ -6,8 +6,12 @@ body, .card {
     overflow-x: hidden;
 }
 
-nav {
+nav, main {
     overflow: hidden;
+}
+
+footer {
+    z-index: 100;
 }
 
 /* Formatação dos links do header */
@@ -67,3 +71,5 @@ color: #1d1919 !important;
     display: none;
 }
 }
+
+/* Seta pra cima */
