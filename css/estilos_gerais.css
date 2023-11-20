@@ -176,20 +176,40 @@
 
 .texto-salao {
   text-align: justify;
+  max-width: 100%;
+  margin: 0 auto;
+  word-wrap: break-word;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
   text-indent: 5%;
   margin-top: 5%;
 }
 
-@media (max-width: 300px) {
+@media screen and (max-width: 395px) {
   .texto-salao {
-    text-align: unset
+    text-align: center;
+    word-wrap: break-word;
+    letter-spacing: 0.01em;
+    line-height: 1.4;
+    text-indent: 0;
+    margin-top: 0;
+    margin-bottom: 1em;
+    word-spacing: 0.01em;
   }
 }
 
 .card-historia {
-  max-width: 50%;
+  max-width: 80%;
   margin: 0 auto;
   overflow: hidden;
+}
+
+@media (max-width: 950px) {
+  .card-historia {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
 }
 
 /* Marcação */
