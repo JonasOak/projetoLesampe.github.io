@@ -4,10 +4,7 @@
 
 - **Breno Almeida**
 - **Jonas Carvalho**
-
+- **Joice Mariana**
+- **Luis Breno**
+  
 <hr>
-
-## Idealizadores
-
-- Joice Mariana
-- Luis Breno
